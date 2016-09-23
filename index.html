@@ -7,9 +7,9 @@
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <body ng-app="myApp" ng-controller="todoCtrl">
 
-<div class="title">
+<div class="window">
 <h2>Family History List</h2>
-</div>
+
 
 <form ng-submit="todoAdd()">
     <input type="text" ng-model="person" size="20" placeholder="Person">
@@ -25,14 +25,15 @@
 </div>
 
 <p><button ng-click="remove()">Remove marked</button></p>
+</div>
 
 <script>
 var app = angular.module('myApp', []);
 app.controller('todoCtrl', function($scope) {
    
-	$scope.todoList = []; 
-    	$scope.todoAdd = function() {
-	$scope.todoList.push({todoText:$scope.person + ", " + $scope.father + ", " + $scope.mother, done:false});
+        $scope.todoList = []; 
+        $scope.todoAdd = function() {
+        $scope.todoList.push({todoText:$scope.person + ", " + $scope.father + ", " + $scope.mother, done:false});
         $scope.person = "";
         $scope.father = "";
         $scope.mother = "";
@@ -50,4 +51,3 @@ app.controller('todoCtrl', function($scope) {
 
 </body>
 </html>
-

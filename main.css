@@ -1,11 +1,13 @@
 body{
-	font-family:'Open Sans',sans-serif;
-	float: center;
+        font-family:'Open Sans',sans-serif;
+        float: center;
 }
 
-.title{
-	color:white;
-	background: #006699;
-	width: 500px;
-}
+.window{
+		text-align: center;
+        color:white;
+        background: #006699;
+        width: 50%;
+        padding: 10px;
 
+}
